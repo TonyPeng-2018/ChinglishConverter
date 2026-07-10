@@ -11,7 +11,7 @@ Status of the main workstreams. Sourced from the code and manual smoke tests.
 | 2026-07-10 | CLI | ✅ Done | `convert`, `tutorial`, `login`, `logout`, `config`. Credential resolution: env → saved key → SDK profile. |
 | 2026-07-10 | Tutorial | ✅ Done | `data/tutorial.md` — structural differences between English and Chinglish; printed by `chinglish tutorial`. |
 | 2026-07-10 | Packaging (exe/binary) | ✅ Done | PyInstaller spec + `build.sh` / `build.ps1` produce a one-file `chinglish` / `chinglish.exe`. Not yet built/verified on each OS in CI. |
-| 2026-07-10 | Docs | ✅ Done | README (canonical), DISCLAIMER (no quality/safety guarantee, bring-your-own key). |
+| 2026-07-10 | Docs | ✅ Done | README (canonical) — now **bilingual**: each section has an inline `> **Chinglish:**` echo. DISCLAIMER (no quality/safety guarantee, bring-your-own key). |
 | 2026-07-10 | Offline tests | ✅ Done | `tests/` cover chunking, prompt building, config; run without network/API. |
 
 ## Not yet done / verified
