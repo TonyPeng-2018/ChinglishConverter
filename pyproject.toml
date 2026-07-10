@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chinglishconverter"
+version = "0.1.0"
+description = "Convert PDF / LaTeX / Overleaf documents between English and Chinglish, powered by the Claude API."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Peng Anfeng" }]
+keywords = ["chinglish", "translation", "latex", "overleaf", "pdf", "claude", "anthropic"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "anthropic>=0.40",
+    "pypdf>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/tintin/ChinglishConverter"
+Source = "https://github.com/tintin/ChinglishConverter"
+
+[project.scripts]
+chinglish = "chinglishconverter.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+chinglishconverter = ["data/*.md"]

@@ -1,0 +1,7 @@
+# Runtime dependencies for ChinglishConverter.
+# Install the project itself with:  pip install -e .
+anthropic>=0.40
+pypdf>=4.0
+
+# Build-only (creating standalone executables); not needed to run from source:
+# pyinstaller>=6.0
